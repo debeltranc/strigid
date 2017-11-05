@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    FlexLayoutModule.forRoot()
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
