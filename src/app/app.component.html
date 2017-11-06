@@ -1,8 +1,6 @@
-
-  <header>header</header>
-  <section id="main" fxLayout.xs="column" fxFlex>
-    <nav fxFlex="1 6 20%" fxFlexOrder fxFlexOrder.xs="1"> nav</nav>
-    <article fxFlex="3 1 60%" fxFlexOrder fxFlexOrder.xs="2"> article</article>
-    <aside fxFlex="1 6 20%" fxFlexOrder fxFlexOrder.xs="3"> aside</aside>
-  </section>
-  <footer>footer</footer>
+<app-header></app-header>
+<nav-bar></nav-bar>
+<section id="main" fxLayout.xs="column" fxLayoutAlign="center auto" fxFlex="3 1 70%">
+  <router-outlet></router-outlet>
+</section>
+<app-footer></app-footer>
