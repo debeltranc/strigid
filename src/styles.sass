@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+$background_color: #4c4c4c
+$background_color_2: #ffeebb
+
+//Forcing the DOM to fill the whole page at minimum
 html, body, app-root
   margin: 0
-  min-height: 100%
+  min-width: 500px
   height: 100%
-  display: flex
-  flex-direction: column
+  display: flex //we will use flex layout, with the help of Angular/flex-layout
+  flex-direction: column //This will align the main sections vertically

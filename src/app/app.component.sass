@@ -1,14 +1,31 @@
+@import ~globals.sass
+
+
+//Formatting for the section holding the actual content
 #main
-  background: #dddd88
-  min-width: 80%
-  min-height: 60%
-  
+  background: $background_color
+  height: 100%-($header_height+$nav_height+$footer_height)
+  .wrapper
+    background: #dddd88
+    opacity: 1.0
+    @media (max-width: 768px)//center section for bigger screens
+      width: 100%
+    @media (min-width: 768px)//Fill whole screen for smaller screens
+      width: 80%
+
+//set some styling to the header container so shape can be inherited  
 app-header
   width: 100%
-  height: 10%
-  background: #4c4c4c
-  
+  height: $header_height
+  background: $background_color
+
+//set some styling to the navigation bar container so shape can be inherited  
+nav-bar
+  width: 100%
+  height: $nav_height
+
+//set some styling to the footer container so shape can be inherited  
 app-footer
   width: 100%
-  height: 4%
-  background: #ffeebb
+  height: $footer_height
+  background: $background_color_2

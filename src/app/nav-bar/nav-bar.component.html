@@ -1,13 +1,27 @@
+<!-- Navigation bar HTML begins here -->
+
+<!-- navbar-expand-md means some elements will collapse when width < 768px -->
+<!-- navbar-dark bg-dark are setting up the both bar and fonts colouring -->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <!-- Toggler button, shows or hides menu when screen width < 768 px -->
+  <!-- data-target and aria-controls point to a div id grouping menuitems -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" 
   data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" 
   aria-label="Toggle navigation">
+    <!-- Button icon -->
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="#">Strigid</a>
+  
+  <!-- Bar logo, or just brand text -->
+  <!-- Avoid reloading the page using [routerLink]="router.url" instead of href="#" -->
+  <!-- TODO: If possible, hide this on first load and show mininalistic logo
+             only when page is scrolled and header is hidden -->
+  <a class="navbar-brand" [routerLink]="router.url">Strigid</a>
 
+  <!-- Group of collapsable menu items -->
   <div class="collapse navbar-collapse" id="navbarToggler">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <!-- instead of href we use Angular router, routes are in app.router.ts -->
       <li class="nav-item">
         <a class="nav-link" routerLink="/" routerLinkActive="active">Inicio</a>
       </li>
@@ -26,3 +40,4 @@
     </ul>
   </div>
 </nav>
+<!-- Navigation bar HTML ends here -->

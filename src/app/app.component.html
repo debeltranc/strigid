@@ -1,6 +1,14 @@
+<!-- App container -->
+
+<!-- Insert header component app/header/header.component -->
 <app-header></app-header>
+<!-- Insert nav bar component app/nav-bar/nav-bar.component -->
 <nav-bar></nav-bar>
-<section id="main" fxLayout.xs="column" fxLayoutAlign="center auto" fxFlex="3 1 70%">
-  <router-outlet></router-outlet>
+<section id="main" fxLayout="row" fxLayoutAlign="center none">
+  <div class="wrapper">
+    <!-- Insert routed component here, routes contained in app/app.router.ts -->
+    <router-outlet></router-outlet>
+  </div>
 </section>
+<!-- Insert header component app/footer/footer.component -->
 <app-footer></app-footer>
