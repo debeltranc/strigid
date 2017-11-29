@@ -3,29 +3,30 @@
 
 //Formatting for the section holding the actual content
 #main
+  position: relative
   background: $background_color
-  height: 100%-($header_height+$nav_height+$footer_height)
-  .wrapper
-    background: #dddd88
-    opacity: 1.0
-    @media (max-width: 768px)//center section for bigger screens
-      width: 100%
-    @media (min-width: 768px)//Fill whole screen for smaller screens
-      width: 80%
+  height: 100%
+  z-index: 1
 
 //set some styling to the header container so shape can be inherited  
 app-header
+  position: relative
   width: 100%
-  height: $header_height
+  height: 110px
   background: $background_color
+  z-index: 1
 
 //set some styling to the navigation bar container so shape can be inherited  
 nav-bar
+  position: relative
   width: 100%
-  height: $nav_height
+  height: 40px
+  z-index: 1
 
 //set some styling to the footer container so shape can be inherited  
 app-footer
+  position: relative
   width: 100%
-  height: $footer_height
+  height: 30px
   background: $background_color_2
+  z-index: 1
